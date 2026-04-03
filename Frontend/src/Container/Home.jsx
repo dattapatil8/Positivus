@@ -1,5 +1,6 @@
 import Illustration from "../assets/Illustration.png";
 import Frame from "../assets/Frame.png"
+import Footer from "../assets/Footer.png"
 export function Home(){
     return(
         <>
@@ -33,6 +34,10 @@ export function Home(){
       </div>
 
       <button className=" mt-5 ml-10 bg-black p-4  text-white rounded-xl  ">Book a consultation</button>
+
+      <footer className="mt-5">
+        <img src={Footer} />
+      </footer>
                  
         </>
     )
