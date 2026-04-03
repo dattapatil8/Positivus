@@ -2,6 +2,7 @@ import { useState } from "react"
 import {Home} from "./Container/Home"
 import { Services } from "./Container/Services"
 import { CaseStudies } from "./Container/CaseStudies"
+import { Working } from "./Container/Working"
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Home />
       <Services />
       <CaseStudies />
+      <Working />
     </>
   )
 }
