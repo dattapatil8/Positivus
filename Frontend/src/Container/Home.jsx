@@ -1,20 +1,12 @@
 import Illustration from "../assets/Illustration.png";
-import Frame from "../assets/Frame.png"
 import Footer from "../assets/Footer.png"
+import Navbar from "../Components/Navbar";
 export function Home(){
     return(
         <>
-        <div className="flex justify-between p-3" >
-            <img  src={Frame} />
-            <ul className="flex h-15 items-center  gap-15  " >
-                <li className="hover:border p-2  rounded">About us</li>
-                <li className="hover:border p-2  rounded">Services</li>
-                <li className="hover:border p-2  rounded">Use Cases</li>
-                <li className="hover:border p-2  rounded">Pricing</li>
-                <li className="hover:border p-2  rounded">Blog</li>
-                <li className="hover:border p-2  rounded">Request a quote</li>
-            </ul>
-        </div>
+        <Navbar 
+        items={["About us","Services","Use Cases","Pricing ","Blog","Request a quote"]}
+        />
 
         <div className=" flex  "><h1 className="text-5xl mt-20  ml-10  ">Navigating the <br/>
                  digital landscape<br/>
