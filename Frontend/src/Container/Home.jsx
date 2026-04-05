@@ -1,13 +1,8 @@
 import Illustration from "../assets/Illustration.png";
 import Footer from "../assets/Footer.png"
-import Navbar from "../Components/Navbar";
 export function Home(){
     return(
         <>
-        <Navbar 
-        items={["About us","Services","Use Cases","Pricing ","Blog","Request a quote"]}
-        />
-
         <div className=" flex  "><h1 className="text-5xl mt-20  ml-10  ">Navigating the <br/>
                  digital landscape<br/>
                  for success </h1>
