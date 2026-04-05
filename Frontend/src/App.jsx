@@ -4,6 +4,7 @@ import { Services } from "./Container/Services"
 import  CaseStudies  from "./Container/CaseStudies"
 import { Working } from "./Container/Working"
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer.jsx"
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
         />
 
       <Home />
+      <Footer/>
       <Services />
       <CaseStudies />
       <Working />
