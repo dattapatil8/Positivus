@@ -4,6 +4,7 @@ import socialmedia  from "../assets/social-media.png";
 import analytetrac  from "../assets/analyte-trac.png";
 import emailmark  from "../assets/email-mark.png";
 import emailmarket  from "../assets/email-market.png";
+import proposal  from "../assets/proposal.png";
 
 export function Services(){
     return(
@@ -100,7 +101,23 @@ export function Services(){
             </div>
             </div>
 
-        </div>
+            <div className="flex gap-20 mt-10 ml-25">
+            <div className= "flex w-300 h-65 border-2 bg-[rgba(241,235,241,0.9)] rounded-3xl shadow-xl/30 ">
+             <div className="ml-10 mt-10 text-2xl w-150 h-18">
+              <h1 className=""><b>Let’s make things happen </b></h1>
+              <h2 className="text-base mt-5">Contact us today to learn more about how our digital marketing services can help your business grow and succeed online. </h2>
+              <h3 className="border-1 mt-10 h-10 w-70 text-center bg-[rgb(7,12,0)] rounded-xl text-white">Get Your free proposal</h3>
+              {/* <a href="#" className="inline-block mt-20 text-xl text-[rgba(30,12,30,0.71)] ">
+                <b>
+                   → Learn more
+                </b>
+                </a> */}
+             </div>
+              <img className="ml-60 " src={proposal} /> 
+            </div>
+            </div>
+       </div>
+
         </>
     )
 }
