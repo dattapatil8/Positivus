@@ -1,4 +1,4 @@
-export default function CaseStudies() {
+export function CaseStudies() {
   return (
     <div className="px-10 py-12 font-sans">
       

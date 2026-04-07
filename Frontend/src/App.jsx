@@ -1,9 +1,10 @@
 import { useState } from "react"
 import {Home} from "./Container/Home.jsx"
 import { Services } from "./Container/Services"
-import  CaseStudies  from "./Container/CaseStudies"
+import { CaseStudies } from "./Container/CaseStudies"
 import { Working } from "./Container/Working"
 import {Teams} from "./Container/Teams.jsx"
+import { ContactUs } from "./Container/ContactUs.jsx"
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer.jsx"
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <CaseStudies />
       <Working />
       <Teams/>
+      <ContactUs />
     </>
   )
 }
