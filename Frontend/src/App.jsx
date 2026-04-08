@@ -7,6 +7,7 @@ import {Teams} from "./Container/Teams.jsx"
 import { ContactUs } from "./Container/ContactUs.jsx"
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer.jsx"
+import { FooterBlock } from "./Container/FooterBlock.jsx"
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
       <Working />
       <Teams/>
       <ContactUs />
+      <FooterBlock />
     </>
   )
 }
