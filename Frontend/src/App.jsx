@@ -11,9 +11,7 @@ import { FooterBlock } from "./Container/FooterBlock.jsx"
 function App() {
   return (
     <>
-     <Navbar 
-        items={["About us","Services","Use Cases","Pricing ","Blog","Request a quote"]}
-        />
+     <Navbar />
 
       <Home />
       <Services />

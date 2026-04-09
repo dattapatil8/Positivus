@@ -1,18 +1,40 @@
 import Frame from "../assets/Frame.png"
-function Navbar({items}) {
+function Navbar() {
   return (
-    <div className="flex justify-between px-10 py-4 bg-green-400  text-xl  ">
+    <nav className=" flex justify-between  items-center bg-green-400 px-4 py-4">
+    
         <img  src={Frame} />
-        <ul className="flex h-15 items-center  gap-15 ">
+      
 
-            {items.map((item,index)=>(
+      <div className=" flex text-lg gap-6 ">
 
-                <li className=" cursor-pointer hover:border rounded p-2 hover:border-black transition duration-200"
-                
-                key={index}> {item}</li>
-            ))}
-        </ul>
-    </div>
+         <a className=" text-white cursor-pointer  p-3 hover:border  rounded "
+        
+        href="#">About us</a>
+
+         <a className=" text-white cursor-pointer  p-3 hover:border  rounded"
+        
+        href="#">Services</a>
+
+         <a className=" text-white cursor-pointer  p-3 hover:border  rounded"
+        
+        href="#">Use Cases</a>
+
+         <a className=" text-white cursor-pointer  p-3 hover:border  rounded"
+        
+        href="#">Pricing</a>
+
+         <a className=" text-white cursor-pointer  p-3 hover:border  rounded"
+        
+        href="#">Blog</a>
+
+         <a className=" text-white cursor-pointer  p-3 hover:border  rounded"
+        
+        href="#">Request a quote</a>
+
+      </div>
+       
+    </nav>
   )
 }
 
