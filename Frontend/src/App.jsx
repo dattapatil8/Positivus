@@ -4,6 +4,7 @@ import { Services } from "./Container/Services"
 import { CaseStudies } from "./Container/CaseStudies"
 import { Working } from "./Container/Working"
 import {Teams} from "./Container/Teams.jsx"
+import {Testimonials} from "./Container/Testimonials.jsx"
 import { ContactUs } from "./Container/ContactUs.jsx"
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer.jsx"
@@ -21,6 +22,7 @@ function App() {
       <CaseStudies />
       <Working />
       <Teams/>
+      <Testimonials/>
       <ContactUs />
       <FooterBlock />
     </>
