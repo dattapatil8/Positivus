@@ -7,7 +7,6 @@ import {Teams} from "./Container/Teams.jsx"
 import {Testimonials} from "./Container/Testimonials.jsx"
 import { ContactUs } from "./Container/ContactUs.jsx"
 import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer.jsx"
 import { FooterBlock } from "./Container/FooterBlock.jsx"
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
         />
 
       <Home />
-      <Footer/>
       <Services />
       <CaseStudies />
       <Working />
