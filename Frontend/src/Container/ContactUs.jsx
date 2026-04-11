@@ -2,9 +2,9 @@ import contactRight from "../assets/contactRight.png";
 
 export function ContactUs() {
     return (
-        <div>
+        <div className="m-">
          {/* head */}
-            <div className="flex items-center gap-6 px-10 py-6">
+            <div className="flex items-center gap-6 px-10 py-6 mt-10">
                 <span className="bg-lime-300 px-4 py-1 rounded font-semibold text-lg">
                     Contact Us
                 </span>
@@ -14,8 +14,8 @@ export function ContactUs() {
                 </p>
             </div>
 
-            {/* mainBox */}
-            <div className="mx-20 bg-gray-100 rounded-2xl flex items-center justify-between px-10 py-8 overflow-hidden">
+            {/* box */}
+            <div className="mx-20 bg-gray-100 rounded-2xl flex items-center justify-between px-10 py-8 overflow-hidden mb-14">
 
   {/* left */}
   <div className="w-[60%]">
