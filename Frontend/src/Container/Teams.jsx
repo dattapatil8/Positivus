@@ -1,4 +1,4 @@
-import SocialIcon from "../assets/SocialIcon.png"
+import { Link } from "react-router-dom"
 import Profile1 from "../assets/Profile1.png"
 import Profile2 from "../assets/Profile2.png"
 import Profile3 from "../assets/Profile3.png"
@@ -76,7 +76,10 @@ export function Teams(){
         />
        </div>
        <div className=" mt-4 flex justify-end  mr-10">
+
+       <Link to="/teams">
         <button className="  cursor-pointer bg-black text-white  py-2 px-9 rounded-xl">See all team</button>
+       </Link>
        </div>
         </>
     )
