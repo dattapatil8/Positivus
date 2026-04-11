@@ -1,4 +1,5 @@
 import Frame from "../assets/Frame.png"
+import {Link} from "react-router-dom"
 function Navbar() {
   return (
     <nav className=" flex justify-between  items-center bg-green-400 px-4 py-4">
@@ -8,29 +9,17 @@ function Navbar() {
 
       <div className=" flex text-lg gap-6 ">
 
-         <a className=" text-white cursor-pointer  p-3 hover:border  rounded "
-        
-        href="#">About us</a>
+         <Link to="" className=" text-white cursor-pointer  p-3 hover:border  rounded ">About us</Link>
 
-         <a className=" text-white cursor-pointer  p-3 hover:border  rounded"
-        
-        href="#">Services</a>
+         <Link to="/services" className=" text-white cursor-pointer  p-3 hover:border  rounded">Services</Link>
 
-         <a className=" text-white cursor-pointer  p-3 hover:border  rounded"
-        
-        href="#">Use Cases</a>
+         <Link to="/casestudies"className=" text-white cursor-pointer  p-3 hover:border  rounded">Use Cases</Link>
 
-         <a className=" text-white cursor-pointer  p-3 hover:border  rounded"
-        
-        href="#">Pricing</a>
+         <Link to="" className=" text-white cursor-pointer  p-3 hover:border  rounded">Pricing</Link>
 
-         <a className=" text-white cursor-pointer  p-3 hover:border  rounded"
-        
-        href="#">Blog</a>
+         <Link to="" className=" text-white cursor-pointer  p-3 hover:border  rounded">Blog</Link>
 
-         <a className=" text-white cursor-pointer  p-3 hover:border  rounded"
-        
-        href="#">Request a quote</a>
+         <Link  to="" className=" text-white cursor-pointer  p-3 hover:border  rounded">Request a quote</Link>
 
       </div>
        
