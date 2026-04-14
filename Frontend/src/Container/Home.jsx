@@ -20,7 +20,7 @@ export function Home() {
             marketing, and content creation.
           </p>
 
-          <button className="mt-6 bg-black text-white px-6 py-3 rounded-xl cursor-pointer ">
+          <button className="mt-6 bg-black text-white px-6 py-3 rounded-xl cursor-pointer transition-shadow duration-300 hover:bg-lime-400 hover:text-black hover:shadow-xl  ">
             Book a consultation
           </button>
         </div>
