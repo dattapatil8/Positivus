@@ -1,29 +1,43 @@
 import Illustration from "../assets/Illustration.png";
-import FooterImg from "../assets/Footer.png"
-export function Home(){
-    return(
-        <>
-        <div className=" flex  "><h1 className="text-5xl mt-20  ml-10  ">Navigating the <br/>
-                 digital landscape<br/>
-                 for success </h1>
+import FooterImg from "../assets/Footer.png";
 
-            <img className=" mt-20 ml-150 w-100"
-                      src={Illustration}
-                        alt="logo"
-                  />
+export function Home() {
+  return (
+    <>
+          <div className="flex justify-between items-center px-10 py-10">
+
+        
+        <div className="max-w-xl">
+          <h1 className="text-7xl font-semibold leading-tight">
+            Navigating the <br />
+            digital landscape <br />
+            for success
+          </h1>
+
+          <p className="mt-20 text-gray-600 leading-relaxed">
+            Our digital marketing agency helps businesses grow and succeed
+            online through a range of services including SEO, PPC, social media
+            marketing, and content creation.
+          </p>
+
+          <button className="mt-6 bg-black text-white px-6 py-3 rounded-xl cursor-pointer ">
+            Book a consultation
+          </button>
+        </div>
+
+    
+        <div>
+          <img
+            className=" mr-20 w-[500px]"
+            src={Illustration}
+            alt="illustration"
+          />
+        </div>
       </div>
 
-      <div className="ml-10">
-        <p>Our digital marketing agency helps businesses <br/>
-            grow and succeed online through a range of<br/>
-             services including SEO, PPC, social media marketing,<br/>
-              and content creation.</p>
+      <div className="px-10 pb-10">
+        <img className="w-full mt-4" src={FooterImg} alt="brands" />
       </div>
-
-      <button className=" mt-5 ml-10 bg-black p-4  text-white rounded-xl  ">Book a consultation</button>
-       <div className="mt-5">
-              <img src={FooterImg} />
-          </div>
-        </>
-    )
+    </>
+  );
 }
