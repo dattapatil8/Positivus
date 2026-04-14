@@ -2,7 +2,7 @@ import Frame from "../assets/Frame.png"
 import {Link} from "react-router-dom"
 function Navbar() {
   return (
-    <nav className=" flex justify-between  items-center bg-lime-500 px-4 py-4 w-full ">
+    <nav className=" flex justify-between  items-center bg-green-500 px-4 py-4 w-full ">
     
         <img  src={Frame} />
       
