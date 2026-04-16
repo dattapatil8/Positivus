@@ -1,7 +1,7 @@
-import Positivus from"./assets/Positivus.png"
-import Social from"./assets/Social.png"
-import Social1 from"./assets/Social1.png"
-import Social2 from"./assets/Social2.png"
+import Positivus from"../assets/Positivus.png"
+import Social from"../assets/Social.png"
+import Social1 from"../assets/Social1.png"
+import Social2 from"../assets/Social2.png"
 export function FooterBlock(){
     return(
         <>
