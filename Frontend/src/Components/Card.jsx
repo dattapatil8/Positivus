@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export function Card({image,name,role,detail}){
     return(
         <>
@@ -17,8 +18,9 @@ export function Card({image,name,role,detail}){
              </div>
 
               <div className=" absolute top-5 right-5 bg-black text-lime-300  font-semibold text-sm  px-2 py-1 rounded-full">
-          in
-        </div>
+        <a 
+                 href="https://www.linkedin.com/company/linkedin"> in </a>
+              </div>
 
         </div>
         <hr className="my-4" />
