@@ -19,7 +19,7 @@ function Navbar() {
 
          <Link to="" className=" text-black font-semibold text-xl cursor-pointer  p-3  transition duration-300 hover:shadow-xl hover:border rounded ">Blog</Link>
 
-         <button className=" text-black font-semibold text-xl cursor-pointer  p-3  transition duration-300 hover:shadow-xl hover:border rounded ">Request a quote</button>
+         <button className=" text-black font-semibold text-xl cursor-pointer  p-3  transition duration-300 hover:shadow-xl border rounded ">Request a quote</button>
 
       </div>
        
