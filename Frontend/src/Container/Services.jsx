@@ -11,7 +11,7 @@ export function Services(){
         <>
         <div> 
              <div className=" flex  mt-20">
-            <h1 className="text-2xl ml-7 bg-[rgba(185,255,102,1)] w-70 text-center h-10"><b>Services</b> </h1>
+            <h1 className="text-2xl ml-7 bg-[rgba(185,255,102,1)] w-50 text-center h-10"><b>Services</b> </h1>
             <h4 className="ml-10  ">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</h4>
             </div>
 

@@ -4,9 +4,7 @@ export function CaseStudies() {
       
       {/* Header */}
       <div className="flex items-center gap-5 mb-8">
-        <span className="bg-lime-300 px-3 py-1 font-semibold rounded">
-          Case Studies
-        </span>
+        <span className="text-2xl ml-3 bg-[rgba(185,255,102,1)] w-50 text-center h-10"><b>Case Studies</b></span>
 
         <p className="text-gray-500 max-w-md">
           Explore Real-Life Examples of Our Proven Digital Marketing Success

@@ -124,9 +124,7 @@ export function ContactUs() {
     <div>
       {/* Header */}
       <div className="flex items-center gap-6 px-10 py-6 mt-10">
-        <span className="bg-lime-300 px-4 py-1 rounded font-semibold text-lg">
-          Contact Us
-        </span>
+        <span className="text-2xl ml-3 bg-[rgba(185,255,102,1)] w-50 text-center h-10"><b>Contact Us</b></span>
 
         <p className="text-gray-600 max-w-md text-sm">
           Connect with Us: Let’s Discuss Your Digital Marketing Needs
