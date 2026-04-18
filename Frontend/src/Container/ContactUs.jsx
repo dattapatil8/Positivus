@@ -32,22 +32,25 @@ function RadioGroup({ type, setType }) {
 }
 
 // input field
-function InputField({ label, name, value, onChange, error }) {
+function InputField({ label, name, value, onChange, error, type = "text" }) {
   return (
     <div className="mb-4">
       <label className="block mb-1 text-sm">{label}</label>
       <input
+        type={type}
         name={name}
         value={value}
         onChange={onChange}
-        className="w-full border border-gray-400 rounded-xl px-4 py-3 outline-none"
+        className={`w-full border rounded-xl px-4 py-3 outline-none ${
+          error ? "border-red-500" : "border-gray-400"
+        }`}
       />
       {error && <p className="text-red-500 text-xs mt-1">{error}</p>}
     </div>
   );
 }
 
-// txtarea field
+// textarea field
 function TextAreaField({ label, name, value, onChange, error }) {
   return (
     <div className="mb-6">
@@ -57,7 +60,9 @@ function TextAreaField({ label, name, value, onChange, error }) {
         value={value}
         onChange={onChange}
         rows="5"
-        className="w-full border border-gray-400 rounded-xl px-4 py-3 outline-none resize-none"
+        className={`w-full border rounded-xl px-4 py-3 outline-none resize-none ${
+          error ? "border-red-500" : "border-gray-400"
+        }`}
       ></textarea>
       {error && <p className="text-red-500 text-xs mt-1">{error}</p>}
     </div>
@@ -90,20 +95,48 @@ export function ContactUs() {
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
   };
 
-  // validation
+  // validation function
   const validate = () => {
     let newErrors = {};
 
-    if (!form.name) newErrors.name = "Name is required";
-    if (!form.email) newErrors.email = "Email is required";
-    if (!form.message) newErrors.message = "Message is required";
+    // Name validation
+    if (!form.name.trim()) {
+      newErrors.name = "Name is required";
+    } else if (form.name.trim().length < 3) {
+      newErrors.name = "Name must be at least 3 characters";
+    }
 
-    // get quote
-    if (type === "quote" && !form.budget) {
-      newErrors.budget = "Budget is required for quote";
+    // Email validation
+    if (!form.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(form.email)
+    ) {
+      newErrors.email = "Invalid email address";
+    }
+
+    // Message validation
+    if (!form.message.trim()) {
+      newErrors.message = "Message is required";
+    } else if (form.message.trim().length < 10) {
+      newErrors.message = "Message must be at least 10 characters";
+    }
+
+    // Budget validation only for quote
+    if (type === "quote") {
+      if (!form.budget.trim()) {
+        newErrors.budget = "Budget is required";
+      } else if (isNaN(form.budget)) {
+        newErrors.budget = "Budget must be a number";
+      } else if (Number(form.budget) < 1000) {
+        newErrors.budget = "Minimum budget should be 1000";
+      }
     }
 
     return newErrors;
@@ -115,8 +148,18 @@ export function ContactUs() {
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
-      alert("Form submitted ✅");
+      alert("Form submitted successfully ✅");
       console.log(form);
+
+      // reset form
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+        budget: "",
+      });
+
+      setErrors({});
     }
   };
 
@@ -124,7 +167,9 @@ export function ContactUs() {
     <div>
       {/* Header */}
       <div className="flex items-center gap-6 px-10 py-6 mt-10">
-        <span className="text-2xl ml-3 bg-[rgba(185,255,102,1)] w-50 text-center h-10"><b>Contact Us</b></span>
+        <span className="text-2xl ml-3 bg-[rgba(185,255,102,1)] w-50 text-center h-10">
+          <b>Contact Us</b>
+        </span>
 
         <p className="text-gray-600 max-w-md text-sm">
           Connect with Us: Let’s Discuss Your Digital Marketing Needs
@@ -149,6 +194,7 @@ export function ContactUs() {
           <InputField
             label="Email"
             name="email"
+            type="email"
             value={form.email}
             onChange={handleChange}
             error={errors.email}
@@ -162,11 +208,12 @@ export function ContactUs() {
             error={errors.message}
           />
 
-          {/* Get a Quote */}
+          {/* Quote field */}
           {type === "quote" && (
             <InputField
               label="Budget"
               name="budget"
+              type="number"
               value={form.budget}
               onChange={handleChange}
               error={errors.budget}
