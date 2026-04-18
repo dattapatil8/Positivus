@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Positivus from"../assets/Positivus.png"
 import Social from"../assets/Social.png"
 import Social1 from"../assets/Social1.png"
@@ -9,11 +10,11 @@ export function FooterBlock(){
         <div  className=" flex gap-2 pt-20 pl-10">
         <img  className="ml-1" src={Positivus}/>
         
-        <a className="text-white ml-20 underline decoration-white hover:border-2 h-8 " href="#">About us</a>
-         <a className="text-white ml-15 underline decoration-white hover:border-2" href="#">Services</a> 
-         <a className="text-white ml-15 underline decoration-white hover:border-2" href="#">Use Cases</a>
-         <a className="text-white ml-15 underline decoration-white hover:border-2" href="#">Pricing</a>
-         <a className="text-white ml-15 underline decoration-white hover:border-2" href="#">Blog</a>
+        <Link to="/about" className="text-white ml-20 underline decoration-white hover:border-2 h-8 ">About us</Link>
+         <Link to="/services" className="text-white ml-15 underline decoration-white hover:border-2" href="#">Services</Link>
+         <Link to ="/casestudies" className="text-white ml-15 underline decoration-white hover:border-2" href="#">Use Cases</Link>
+         <Link className="text-white ml-15 underline decoration-white hover:border-2" href="#">Pricing</Link>
+         <Link className="text-white ml-15 underline decoration-white hover:border-2" href="#">Blog</Link>
          <div className="ml-60 gap-5 flex">
          <img  className="hover:border-2" src={Social}/>
            <img  className="hover:border-2" src={Social1}/>
@@ -35,9 +36,9 @@ export function FooterBlock(){
         <hr className="border-white mt-10 mx-10" />
         <div className="text-white flex mt-10 pb-10 ml-10 gap-30">
             <h2>© 2023 Positivus. All Rights Reserved.</h2>
-            <a href="#" className="text-white underline decoration-white hover:text-blue-500">
-            Privacy Policy
-</a>
+            <Link to="#" className="text-white underline decoration-white hover:text-blue-500"> Privacy Policy</Link>
+           
+
         </div>
         </div>
         </>

@@ -10,7 +10,6 @@ import { FooterBlock } from "./FooterBlock.jsx"
 export function LandingPage(){
     return(
         <>
-         <Navbar/>
     <Home />
       <Services />
       <CaseStudies />

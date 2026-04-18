@@ -10,10 +10,11 @@ import { ContactUs } from "./Container/ContactUs.jsx"
 import Navbar from "./Components/Navbar";
 import { FooterBlock } from "./Container/FooterBlock.jsx"
 import { LandingPage } from "./Container/LandingPage.jsx"
+import About from "./Pages/About.jsx"
 function App() {
   return (
     <>
-   
+    <Navbar/>
     <Routes>
       <Route path="/" element={<LandingPage/>} />
     < Route path="/home"  element={<Home />} />
@@ -24,6 +25,7 @@ function App() {
      < Route path="/testimonials"    element={<Testimonials/>}  />
      < Route path="/contactus"    element={<ContactUs />} />
      < Route path="/footerblock"    element={<FooterBlock />}  />
+     <Route path ="/about" element={<About/>} />
       </Routes>
     
     </>
