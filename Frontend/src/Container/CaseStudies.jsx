@@ -1,10 +1,10 @@
 export function CaseStudies() {
   return (
-    <div className="px-10 py-12 font-sans">
+  <div className="px-4 md:px-10 py-10 md:py-12 font-sans">
       
       {/* Header */}
-      <div className="flex items-center gap-5 mb-8">
-        <span className="text-2xl ml-3 bg-[rgba(185,255,102,1)] w-50 text-center h-10"><b>Case Studies</b></span>
+      <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-5 mb-8">
+        <span className="text-lg md:text-2xl bg-[rgba(185,255,102,1)] px-4 py-2 text-center"><b>Case Studies</b></span>
 
         <p className="text-gray-500 max-w-md">
           Explore Real-Life Examples of Our Proven Digital Marketing Success
@@ -13,11 +13,10 @@ export function CaseStudies() {
       </div>
 
       {/* Cards */}
-      <div className="flex bg-slate-900 text-white rounded-2xl p-8 gap-6">
-        
+     <div className="flex flex-col md:flex-row bg-slate-900 text-white rounded-2xl p-6 md:p-8 gap-6">
         {/* Card 1 */}
         <div className="flex-1">
-          <p className="text-sm leading-relaxed">
+             <p className="text-sm md:text-base leading-relaxed">
             For a local restaurant, we implemented a targeted PPC campaign that
             resulted in a 50% increase in website traffic and a 25% increase in sales.
           </p>
@@ -27,11 +26,11 @@ export function CaseStudies() {
         </div>
 
         {/* Divider */}
-        <div className="w-[1px] bg-gray-600"></div>
+        <div className="hidden md:block w-[1px] bg-gray-600"></div>
 
         {/* Card 2 */}
         <div className="flex-1">
-          <p className="text-sm leading-relaxed">
+          <p className="text-sm md:text-base leading-relaxed">
             For a B2B software company, we developed an SEO strategy that resulted
             in a first page ranking for key keywords and a 200% increase in organic traffic.
           </p>
@@ -45,7 +44,7 @@ export function CaseStudies() {
 
         {/* Card 3 */}
         <div className="flex-1">
-          <p className="text-sm leading-relaxed">
+              <p className="text-sm md:text-base leading-relaxed">
             For a national retail chain, we created a social media marketing campaign
             that increased followers by 25% and generated a 20% increase in online sales.
           </p>

@@ -107,11 +107,6 @@ export function Services(){
               <h1 className=""><b>Let’s make things happen </b></h1>
               <h2 className="text-base mt-5">Contact us today to learn more about how our digital marketing services can help your business grow and succeed online. </h2>
               <h3 className=" cursor-pointer border-1 mt-10 h-10 w-70 text-center bg-[rgb(7,12,0)] rounded-xl text-white">Get Your free proposal</h3>
-              {/* <a href="#" className="inline-block mt-20 text-xl text-[rgba(30,12,30,0.71)] ">
-                <b>
-                   → Learn more
-                </b>
-                </a> */}
              </div>
               <img className="ml-60  " src={proposal} /> 
             </div>
