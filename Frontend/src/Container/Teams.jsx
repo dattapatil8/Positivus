@@ -78,7 +78,7 @@ export function Teams(){
        <div className=" mt-4 flex justify-end  mr-10">
 
        <Link to="/teams">
-        <button className="  cursor-pointer bg-black text-white  py-2 px-9 rounded-xl">See all team</button>
+        <button className="mt-6 bg-black text-white px-6 py-3 rounded-xl cursor-pointer transition-shadow duration-300 hover:bg-lime-400 hover:text-black hover:shadow-xl  ">See all team</button>
        </Link>
        </div>
         </>
