@@ -21,7 +21,7 @@ function Navbar() {
 
          <Link to="/blog"  className=" text-black font-semibold text-base md:text-lg cursor-pointer  px-3 py-2 transition duration-300 hover:shadow-xl hover:border rounded ">Blog</Link>
 
-         <button  className=" text-black font-semibold text-base md:text-lg px-4 py-2 border rounded  cursor-pointer hover:shadow-xl  "><Link to ="/request">Request a quote</Link></button>
+         <button  className=" text-black font-semibold text-base md:text-lg px-4 py-2 border rounded  cursor-pointer hover:shadow-xl  "><Link to ="/quote">Request a quote</Link></button>
 
       </div>
        
