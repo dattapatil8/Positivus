@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 export function Card({image,name,role,detail}){
     return(
         <>
-        <div className="relative mt-5 w-full max-w-sm mx-auto rounded-4xl border p-6 md:p-8 shadow-xl bg-white">
+        <div className="relative mt-5 w-full max-w-sm mx-auto rounded-4xl border p-6 md:p-8  bg-white hover:shadow-xl hover:border transition druration-300 ">
         
         <div className="flex justify-between items-center">
 
