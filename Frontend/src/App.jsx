@@ -12,6 +12,7 @@ import { FooterBlock } from "./Container/FooterBlock.jsx"
 import { LandingPage } from "./Container/LandingPage.jsx"
 import About from "./Pages/About.jsx"
 import Pricing from "./Pages/Pricing.jsx"
+import Blog from "./Pages/Blog.jsx"
 function App() {
   return (
     <>
