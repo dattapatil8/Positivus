@@ -28,6 +28,7 @@ function App() {
      < Route path="/footerblock"    element={<FooterBlock />}  />
      <Route path ="/about" element={<About/>} />
       <Route path ="/pricing" element={<Pricing/>} />
+      <Route path ="/blog" element={<Blog/>} />
 
       </Routes>
     
