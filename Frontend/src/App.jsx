@@ -13,6 +13,7 @@ import { LandingPage } from "./Container/LandingPage.jsx"
 import About from "./Pages/About.jsx"
 import Pricing from "./Pages/Pricing.jsx"
 import Blog from "./Pages/Blog.jsx"
+import Quote from "./Pages/Quote.jsx"
 function App() {
   return (
     <>
@@ -30,6 +31,7 @@ function App() {
      <Route path ="/about" element={<About/>} />
       <Route path ="/pricing" element={<Pricing/>} />
       <Route path ="/blog" element={<Blog/>} />
+      <Route path ="/quote" element={<Quote/>}/>
 
       </Routes>
     
