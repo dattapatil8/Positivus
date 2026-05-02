@@ -2,12 +2,9 @@ import Frame from "../assets/Frame.png"
 import {Link} from "react-router-dom"
 function Navbar() {
   return (
-    <nav className=" flex justify-between  items-center  bg-[rgba(185,255,102,1)] px-4  md:px-8 py-4 w-full ">
+    <nav className="sticky top-0 z-50 flex justify-between  items-center  bg-[rgba(185,255,102,1)] px-4  md:px-8 py-4 w-full ">
     
         <Link to="/"><img  src={Frame} className="w-24 md:w-24" ></img></Link>
-      <div className="md:hidden text-2xl cursor-pointer">
-           ☰
-         </div>
 
       <div className="hidden md:flex text-lg gap-6 items-center ">
 
