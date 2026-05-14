@@ -1,19 +1,77 @@
-function About(){
-    return (
-        <>
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum repudiandae voluptas, neque pariatur natus nobis omnis voluptate laudantium consequatur aliquid adipisci labore exercitationem odit dolores magnam in quaerat maiores quo.
-                Nulla nesciunt deserunt est, commodi possimus quae corrupti excepturi. Totam incidunt consequatur, voluptatibus praesentium accusantium, blanditiis nisi perferendis vitae facilis pariatur quod quisquam necessitatibus mollitia? Iusto debitis facilis suscipit consequuntur.
-                Amet, qui cumque consequatur officiis illo ad voluptas perferendis repellendus saepe ea hic beatae, enim odit vel ratione dicta nihil doloremque quia expedita quo iste, maiores consequuntur ipsam? Earum, adipisci!
-                Id eveniet beatae nesciunt! Odit assumenda dolorem quaerat explicabo! Aperiam assumenda, a sapiente laudantium similique quibusdam cumque dolorem reiciendis doloremque minima explicabo! Corporis, error atque voluptatibus impedit cupiditate repellendus excepturi.
-                Ab et provident obcaecati voluptatem! Recusandae quas, cupiditate deleniti nobis iusto rem earum aperiam dolore laudantium placeat voluptates et ad asperiores, voluptatibus autem, a quis dolor eos animi rerum ipsam?
-                Explicabo illum modi impedit vero non ad tempore, harum alias delectus dolor autem numquam velit quae totam veritatis doloribus maxime blanditiis architecto aut at cumque deserunt beatae. Provident, expedita saepe?
-                Ullam natus assumenda facilis dolor voluptas fuga voluptate ducimus ut temporibus, rerum commodi corrupti non, dolorem sunt. Id cum quaerat tenetur excepturi reprehenderit culpa eligendi cupiditate voluptatibus corporis non. Amet!
-                Cum, culpa exercitationem? Modi atque tempora sequi natus perspiciatis voluptatem cum, cumque ipsa voluptatibus, nam reiciendis reprehenderit. Ipsum fugit architecto numquam eaque fuga reiciendis alias velit aut animi. Aliquam, adipisci.
-                Minima maxime pariatur quo dignissimos inventore quasi repellat animi vel temporibus id. Officiis nobis quas expedita molestias suscipit quidem unde doloremque voluptatibus, in, esse hic distinctio eveniet eaque ut dolores.
-                Itaque dolor blanditiis dolore error hic voluptatem dignissimos iusto aspernatur exercitationem! Sint perferendis illo exercitationem numquam temporibus repellendus vel fugit, voluptatum animi aperiam enim distinctio molestiae quisquam optio fuga. Veritatis?</p>
-            </div>
-        </>
-    )
+import React from "react";
+
+ function About() {
+  return (
+    <div className="bg-[#F3F3F3] min-h-screen px-6 md:px-16 py-14">
+      <div className="flex flex-col md:flex-row md:items-center gap-5 mb-14">
+        <h1 className="bg-[#B9FF66] px-5 py-2 text-3xl font-bold rounded">
+          About Us
+        </h1>
+
+        <p className="text-gray-700 max-w-2xl text-lg">
+          Learn more about our digital marketing agency, our mission, and how
+          we help businesses grow online with modern marketing strategies.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+            alt="team"
+            className="rounded-3xl shadow-lg border border-black"
+          />
+        </div>
+
+        <div>
+          <h2 className="text-4xl font-bold mb-6">
+            We Create Digital Solutions For Modern Businesses
+          </h2>
+
+          <p className="text-gray-700 text-lg leading-8 mb-6">
+            Positivus is a creative digital marketing agency focused on helping
+            businesses improve their online presence through SEO, social media
+            marketing, branding, and web design solutions.
+          </p>
+
+          <p className="text-gray-700 text-lg leading-8 mb-8">
+            Our goal is to deliver high-quality marketing experiences that help
+            brands connect with customers and achieve long-term growth in the
+            digital world.
+          </p>
+
+          <button className="bg-black text-white px-8 py-4 rounded-xl text-lg hover:scale-105 duration-300">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
+        <div className="bg-white border border-black rounded-3xl p-8 shadow-lg">
+          <h3 className="text-4xl font-bold mb-4">150+</h3>
+
+          <p className="text-gray-700 text-lg">
+            Successful projects delivered for clients worldwide.
+          </p>
+        </div>
+
+        <div className="bg-white border border-black rounded-3xl p-8 shadow-lg">
+          <h3 className="text-4xl font-bold mb-4">98%</h3>
+
+          <p className="text-gray-700 text-lg">
+            Client satisfaction through quality digital solutions.
+          </p>
+        </div>
+
+        <div className="bg-white border border-black rounded-3xl p-8 shadow-lg">
+          <h3 className="text-4xl font-bold mb-4">24/7</h3>
+
+          <p className="text-gray-700 text-lg">
+            Dedicated support and consultation for every project.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 }
 export default About;
