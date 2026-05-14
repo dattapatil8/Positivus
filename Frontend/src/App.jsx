@@ -14,6 +14,7 @@ import About from "./Pages/About.jsx"
 import Pricing from "./Pages/Pricing.jsx"
 import Blog from "./Pages/Blog.jsx"
 import Quote from "./Pages/Quote.jsx"
+import Consultation from "./Pages/Consultation.jsx"
 function App() {
   return (
     <>
@@ -32,6 +33,7 @@ function App() {
       <Route path ="/pricing" element={<Pricing/>} />
       <Route path ="/blog" element={<Blog/>} />
       <Route path ="/quote" element={<Quote/>}/>
+     <Route path="/consultation" element={<Consultation />} />
 
       </Routes>
     

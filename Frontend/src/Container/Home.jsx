@@ -1,7 +1,18 @@
 import Illustration from "../assets/Illustration.png";
 import FooterImg from "../assets/Footer.png";
+import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import Consultation from "../Pages/Consultation";
+
+
 
 export function Home() {
+
+  const navigate = useNavigate();
+
+  const Go = ()=>{
+    navigate("/consultation")
+  }
   return (
     <>
           <div className="flex justify-between items-center px-10 py-10">
@@ -20,7 +31,9 @@ export function Home() {
             marketing, and content creation.
           </p>
 
-          <button className="mt-6 bg-black text-white px-6 py-3 rounded-xl cursor-pointer transition-shadow duration-300 hover:bg-lime-400 hover:text-black hover:shadow-xl  ">
+          <button 
+          onClick={Go}
+          className="mt-6 bg-black text-white px-6 py-3 rounded-xl cursor-pointer transition-shadow duration-300 hover:bg-lime-400 hover:text-black hover:shadow-xl  ">
             Book a consultation
           </button>
         </div>
