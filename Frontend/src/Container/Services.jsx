@@ -1,118 +1,161 @@
-import searchengine  from "../assets/1st.png";
-import payper  from "../assets/pay-per.png";
-import socialmedia  from "../assets/social-media.png";
-import analytetrac  from "../assets/analyte-trac.png";
-import emailmark  from "../assets/email-mark.png";
-import emailmarket  from "../assets/email-market.png";
-import proposal  from "../assets/proposal.png";
+import searchengine from "../assets/1st.png";
+import payper from "../assets/pay-per.png";
+import socialmedia from "../assets/social-media.png";
+import analytetrac from "../assets/analyte-trac.png";
+import emailmark from "../assets/email-mark.png";
+import emailmarket from "../assets/email-market.png";
+import proposal from "../assets/proposal.png";
 
-export function Services(){
-    return(
-        <>
-        <div> 
-             <div className=" flex  mt-20">
-            <h1 className="text-2xl ml-7 bg-[rgba(185,255,102,1)] w-50 text-center h-10"><b>Services</b> </h1>
-            <h4 className="ml-10  ">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</h4>
-            </div>
+export function Services() {
+  return (
+    <>
+      <div className="px-5 md:px-10 py-10 ">
+        
+        <div className="flex flex-col md:flex-row gap-5 md:items-center mt-10">
+          <h1 className="text-3xl font-bold bg-[rgba(185,255,102,1)] px-5 py-2 rounded w-fit">
+            Services
+          </h1>
 
-           
-             <div className="flex gap-20 mt-10 ml-25 ">
-             <div className= "flex w-140 h-60 border-2 bg-[rgba(241,235,241,0.9)] rounded-3xl hover:shadow-xl hover:border transition druration-300 ">
-             <div className="ml-10 mt-10 text-center text-2xl w-50 h-18 bg-[rgba(185,255,102,1)]">
-              <h1>Search engine </h1>
-              <h2>optimization </h2>
-               <a href="#" className="inline-block mt-20 text-xl text-[rgba(30,12,30,0.71)] ">
-                <b className="hover:text-red-500">
-                   → Learn more
-                </b>
-               </a>
-             </div>
-              <img className="ml-10" src={searchengine} /> 
-            </div>
+          <h4 className="text-gray-700 max-w-3xl">
+            At our digital marketing agency, we offer a range of services to
+            help businesses grow and succeed online. These services include:
+          </h4>
+        </div>
 
-            <div className= "flex w-140 h-60 border-2 bg-[rgba(185,255,102,1)] rounded-3xl hover:shadow-xl hover:border transition druration-300 ">
-             <div className="ml-10 mt-10 text-center text-2xl w-50 h-18 bg-[rgba(241,235,241,0.9)] ">
-              <h1>Pay-per-click </h1>
-              <h2>Advertising</h2>
-              <a href="#" className="inline-block mt-20 text-xl text-[rgba(30,12,30,0.71)] ">
-                <b className="hover:text-red-500">
-                   → Learn more
-                </b>
-              </a>
-             </div>
-              <img className="ml-10" src={payper} /> 
-            </div>
-            </div>
-            
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-14">
 
-             <div className="flex gap-20 mt-10 ml-25">
-            <div className= "flex w-140 h-60 border-2 bg-[rgba(185,255,102,1)] rounded-3xl hover:shadow-xl hover:border transition druration-300 ">
-             <div className="ml-10 mt-10 text-center text-2xl w-50 h-18 bg-[rgba(241,235,241,0.9)] ">
-              <h1>Content </h1>
-              <h2>creation </h2>
-              <a href="#" className="inline-block mt-20 text-xl text-[rgba(30,12,30,0.71)] ">
-                <b className="hover:text-red-500">
-                   → Learn more
-                </b>
-               </a>
-             </div>
-              <img className="ml-10" src={socialmedia} /> 
+          <div className="flex flex-col md:flex-row items-center justify-between border-2 bg-[rgba(241,235,241,0.9)] rounded-3xl p-8 hover:shadow-xl transition duration-300">
+            <div>
+              <div className="bg-[rgba(185,255,102,1)] text-2xl font-semibold px-4 py-2 rounded-xl w-fit">
+                <h1>Search engine</h1>
+                <h2>optimization</h2>
               </div>
 
-             <div className= "flex w-140 h-60 border-2 bg-[rgba(30,12,30,0.71)] rounded-3xl hover:shadow-xl hover:border transition druration-300">
-             <div className="ml-10 mt-10 text-center text-2xl w-50 h-18 bg-[rgba(185,255,102,1)]">
-              <h1>Analytics and </h1>
-              <h2>Tracking </h2>
-              <a href="#" className="inline-block mt-20 text-xl text-[rgba(241,235,241,0.9)] ">
-                <b className="hover:text-red-500">
-                   → Learn more
-                </b>
+              <a
+                href="#"
+                className="inline-block mt-16 text-xl text-[rgba(30,12,30,0.71)] hover:text-red-500"
+              >
+                → Learn more
               </a>
-             </div>
-              <img className="ml-10" src={analytetrac} /> 
-            </div>
             </div>
 
-             <div className="flex gap-20 mt-10 ml-25">
-             <div className= "flex w-140 h-60 border-2 bg-[rgba(30,12,30,0.71)] rounded-3xl hover:shadow-xl hover:border transition druration-300 ">
-             <div className="ml-10 mt-10 text-center text-2xl w-50 h-18 bg-[rgba(185,255,102,1)]">
-              <h1>Social Media </h1>
-              <h2>Marketing </h2>
-              <a href="#" className="inline-block mt-20 text-xl text-[rgba(241,235,241,0.9)] ">
-                <b className="hover:text-red-500">
-                   → Learn more
-                </b>
-              </a>
-             </div>
-              <img className="ml-10" src={emailmark} /> 
+            <img
+              className="w-52 mt-8 md:mt-0"
+              src={searchengine}
+              alt=""
+            />
+          </div>
+
+          <div className="flex flex-col md:flex-row items-center justify-between border-2 bg-[rgba(185,255,102,1)] rounded-3xl p-8 hover:shadow-xl transition duration-300">
+            <div>
+              <div className="bg-[rgba(241,235,241,0.9)] text-2xl font-semibold px-4 py-2 rounded-xl w-fit">
+                <h1>Pay-per-click</h1>
+                <h2>Advertising</h2>
               </div>
 
-            <div className= "flex w-140 h-60 border-2 bg-[rgba(241,235,241,0.9)] rounded-3xl hover:shadow-xl hover:border transition druration-300 ">
-             <div className="ml-10 mt-10 text-center text-2xl w-50 h-18 bg-[rgba(185,255,102,1)]">
-              <h1>Email </h1>
-              <h2>Marketing </h2>
-              <a href="#" className="inline-block mt-20 text-xl text-[rgba(30,12,30,0.71)] ">
-                <b className="hover:text-red-500">
-                   → Learn more
-                </b>
-                </a>
-             </div>
-              <img className="ml-10" src={emailmarket} /> 
-            </div>
+              <a
+                href="#"
+                className="inline-block mt-16 text-xl text-[rgba(30,12,30,0.71)] hover:text-red-500"
+              >
+                → Learn more
+              </a>
             </div>
 
-            <div className="flex gap-20 mt-10 ml-25">
-            <div className= "flex w-300 h-65 border-2 bg-[rgba(241,235,241,0.9)] rounded-3xl hover:shadow-xl hover:border transition druration-300 ">
-             <div className="ml-10 mt-10 text-2xl w-150 h-18">
-              <h1 className=""><b>Let’s make things happen </b></h1>
-              <h2 className="text-base mt-5">Contact us today to learn more about how our digital marketing services can help your business grow and succeed online. </h2>
-              <h3 className=" cursor-pointer border-1 mt-10 h-10 w-70 text-center bg-[rgb(7,12,0)] rounded-xl text-white">Get Your free proposal</h3>
-             </div>
-              <img className="ml-60  " src={proposal} /> 
-            </div>
-            </div>
-       </div>
+            <img className="w-52 mt-8 md:mt-0" src={payper} alt="" />
+          </div>
 
-        </>
-    )
+          <div className="flex flex-col md:flex-row items-center justify-between border-2 bg-[rgba(185,255,102,1)] rounded-3xl p-8 hover:shadow-xl transition duration-300">
+            <div>
+              <div className="bg-[rgba(241,235,241,0.9)] text-2xl font-semibold px-4 py-2 rounded-xl w-fit">
+                <h1>Content</h1>
+                <h2>creation</h2>
+              </div>
+
+              <a
+                href="#"
+                className="inline-block mt-16 text-xl text-[rgba(30,12,30,0.71)] hover:text-red-500"
+              >
+                → Learn more
+              </a>
+            </div>
+
+            <img className="w-52 mt-8 md:mt-0" src={socialmedia} alt="" />
+          </div>
+
+          <div className="flex flex-col md:flex-row items-center justify-between border-2 bg-[rgba(30,12,30,0.71)] rounded-3xl p-8 hover:shadow-xl transition duration-300">
+            <div>
+              <div className="bg-[rgba(185,255,102,1)] text-2xl font-semibold px-4 py-2 rounded-xl w-fit">
+                <h1>Analytics and</h1>
+                <h2>Tracking</h2>
+              </div>
+
+              <a
+                href="#"
+                className="inline-block mt-16 text-xl text-white hover:text-red-500"
+              >
+                → Learn more
+              </a>
+            </div>
+
+            <img className="w-52 mt-8 md:mt-0" src={analytetrac} alt="" />
+          </div>
+
+          <div className="flex flex-col md:flex-row items-center justify-between border-2 bg-[rgba(30,12,30,0.71)] rounded-3xl p-8 hover:shadow-xl transition duration-300">
+            <div>
+              <div className="bg-[rgba(185,255,102,1)] text-2xl font-semibold px-4 py-2 rounded-xl w-fit">
+                <h1>Social Media</h1>
+                <h2>Marketing</h2>
+              </div>
+
+              <a
+                href="#"
+                className="inline-block mt-16 text-xl text-white hover:text-red-500"
+              >
+                → Learn more
+              </a>
+            </div>
+
+            <img className="w-52 mt-8 md:mt-0" src={emailmark} alt="" />
+          </div>
+
+          <div className="flex flex-col md:flex-row items-center justify-between border-2 bg-[rgba(241,235,241,0.9)] rounded-3xl p-8 hover:shadow-xl transition duration-300">
+            <div>
+              <div className="bg-[rgba(185,255,102,1)] text-2xl font-semibold px-4 py-2 rounded-xl w-fit">
+                <h1>Email</h1>
+                <h2>Marketing</h2>
+              </div>
+
+              <a
+                href="#"
+                className="inline-block mt-16 text-xl text-[rgba(30,12,30,0.71)] hover:text-red-500"
+              >
+                → Learn more
+              </a>
+            </div>
+
+            <img className="w-52 mt-8 md:mt-0" src={emailmarket} alt="" />
+          </div>
+        </div>
+
+        <div className="mt-16 border-2 bg-[rgba(241,235,241,0.9)] rounded-3xl p-8 flex flex-col lg:flex-row items-center justify-between gap-10 hover:shadow-xl transition duration-300">
+          <div className="max-w-2xl">
+            <h1 className="text-4xl font-bold">
+              Let’s make things happen
+            </h1>
+
+            <h2 className="text-lg mt-5 text-gray-700 leading-8">
+              Contact us today to learn more about how our digital marketing
+              services can help your business grow and succeed online.
+            </h2>
+
+            <button className="mt-10 bg-black text-white px-8 py-4 rounded-xl hover:bg-lime-400 hover:text-black transition duration-300">
+              Get Your free proposal
+            </button>
+          </div>
+
+          <img className="w-72 md:w-96" src={proposal} alt="" />
+        </div>
+      </div>
+    </>
+  );
 }
