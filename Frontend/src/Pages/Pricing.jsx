@@ -5,7 +5,7 @@ import React from "react";
     {
       id: 1,
       name: "Basic",
-      price: "$29/month",
+      price: "299₹/month",
       features: [
         "SEO Optimization",
         "Social Media Support",
@@ -15,7 +15,7 @@ import React from "react";
     {
       id: 2,
       name: "Standard",
-      price: "$59/month",
+      price: "399₹/month",
       features: [
         "Advanced SEO",
         "Content Marketing",
@@ -26,7 +26,7 @@ import React from "react";
     {
       id: 3,
       name: "Premium",
-      price: "$99/month",
+      price: "499₹/month",
       features: [
         "Full Marketing Strategy",
         "24/7 Support",
