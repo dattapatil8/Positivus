@@ -130,11 +130,11 @@ During this project, I improved my understanding of:
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Contributors
 
-Dipak Magadum
+This project was collaboratively built by a team of frontend developers while learning and exploring modern React.js development practices.
 
-Frontend Developer passionate about building modern and responsive web applications using React.js.
+We worked together on designing responsive layouts, building reusable React components, structuring the UI, and improving overall frontend development skills using React.js and Tailwind CSS.
 
 ---
 
